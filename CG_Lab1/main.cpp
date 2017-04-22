@@ -24,7 +24,7 @@ using glm::vec3;
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 int t;
-float v = 0.005;
+float v = 0.0005;
 
 SDL_Surface* screen;
 vector<vec3> stars(100);
@@ -126,9 +126,12 @@ void Draw()
 	//float xAxis, yAxis, zAxis;
 	for (size_t s = 0; s<stars.size(); ++s)
 	{
+		//vec3 color = 0.2f*vec3(1, 1, 1) / (stars[s].z*stars[s].z);
 		
 		x2d = f*stars[s].x / stars[s].z + SCREEN_WIDTH / 2;
 		y2d = f*stars[s].y / stars[s].z + SCREEN_HEIGHT / 2;
+		
+		
 		PutPixelSDL(screen, x2d, y2d, whitecolor);
 		 
 		

@@ -19,10 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{963AB893-64A5-45C9-AF65-AFFB1DD3C161}</ProjectGuid>
-    <RootNamespace>CG_Lab1</RootNamespace>
+    <ProjectGuid>{02384E1C-6CE3-4AE2-8F42-A424F9EA478A}</ProjectGuid>
+    <RootNamespace>DH2323_Lab2</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>DH2323_Lab1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,13 +74,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\CG_DH2323\SDL-devel-1.2.15-VC\SDL-1.2.15\include;D:\CG_DH2323\CgLab1\CgLab1\glm;D:\CG_DH2323\CgLab1\CgLab1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>D:\CG_DH2323\SDL-devel-1.2.15-VC\SDL-1.2.15\include;D:\CG_DH2323\CgLab2-20170328T182746Z-001\CgLab2\glm;D:\CG_DH2323\CgLab2-20170328T182746Z-001\CgLab2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>D:\CG_DH2323\SDL-devel-1.2.15-VC\SDL-1.2.15\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL.lib;SDLmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -121,7 +119,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Desktop\CgLab1\CgLab1\SDLauxiliary.h" />
+    <ClInclude Include="D:\CG_DH2323\CgLab2-20170328T182746Z-001\CgLab2\SDLauxiliary.h" />
+    <ClInclude Include="D:\CG_DH2323\CgLab2-20170328T182746Z-001\CgLab2\TestModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
