@@ -19,15 +19,13 @@ const int SCREEN_HEIGHT = 100;
 const int focalLength = SCREEN_HEIGHT; //camera focalLength
 SDL_Surface* screen;
 int t; //Update 
-
 vector<Triangle> triangles;
 vec3 cameraPos(0, 0, -3); //camera position
 vec3 Black(0, 0, 0);
 vec3 White(1, 1, 1);//color
 float m = std::numeric_limits<float>::max();
 
-float yawY = 0.0f;
-float yawX = 0.0f;
+float yaw = 0.0f;
 mat3 R;
 
 vec3 lightPos(0, -0.5, -0.7);
@@ -87,22 +85,22 @@ void Update()
 
 	if (keystate[SDLK_UP])
 	{
-		yawX = yawX + 0.05f;
+		yaw += 0.05f;
 		RotateX();
 	}
 	if (keystate[SDLK_DOWN])
 	{
-		yawX = yawX - 0.05f;
+		yaw -= 0.05f;
 		RotateX();
 	}
 	if (keystate[SDLK_LEFT])
 	{
-		yawY = yawY + 0.05f;
+		yaw += 0.05f;
 		RotateY();
 	}
 	if (keystate[SDLK_RIGHT])
 	{
-		yawY = yawY - 0.05f;
+		yaw -= 0.05f;
 		RotateY();
 	}
 
@@ -185,16 +183,16 @@ bool ClosestIntersection(vec3 start, vec3 dir, const vector<Triangle>& triangles
 void RotateX()
 {
 	vec3 Row1(1, 0, 0);
-	vec3 Row2(0, cos(yawX), -sin(yawX));
-	vec3 Row3(0, sin(yawX), cos(yawX));
+	vec3 Row2(0, cos(yaw), -sin(yaw));
+	vec3 Row3(0, sin(yaw), cos(yaw));
 	R = mat3(Row1, Row2, Row3);
 }
 
 void RotateY()
 {
-	vec3 Row1(cos(yawY), 0, sin(yawY));
+	vec3 Row1(cos(yaw), 0, sin(yaw));
 	vec3 Row2(0, 1, 0);
-	vec3 Row3(-sin(yawY), 0, cos(yawY));
+	vec3 Row3(-sin(yaw), 0, cos(yaw));
 	R = mat3(Row1, Row2, Row3);
 }
 
