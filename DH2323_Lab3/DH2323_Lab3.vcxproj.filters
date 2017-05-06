@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="F:\ChromeDownload\CgLab3-20170422T165332Z-001\CgLab3\TestModel.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\ChromeDownload\CgLab3-20170422T165332Z-001\CgLab3\SDLauxiliary.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="F:\ChromeDownload\CgLab3-20170422T165332Z-001\CgLab3\skeleton.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLauxiliary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

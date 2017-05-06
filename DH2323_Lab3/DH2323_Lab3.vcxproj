@@ -118,11 +118,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="F:\ChromeDownload\CgLab3-20170422T165332Z-001\CgLab3\skeleton.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="F:\ChromeDownload\CgLab3-20170422T165332Z-001\CgLab3\SDLauxiliary.h" />
-    <ClInclude Include="F:\ChromeDownload\CgLab3-20170422T165332Z-001\CgLab3\TestModel.h" />
+    <ClInclude Include="SDLauxiliary.h" />
+    <ClInclude Include="TestModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
