@@ -22,7 +22,7 @@
     <ProjectGuid>{963AB893-64A5-45C9-AF65-AFFB1DD3C161}</ProjectGuid>
     <RootNamespace>CG_Lab1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>DH2323_Lab1</ProjectName>
+    <ProjectName>DH2323_Lab</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
